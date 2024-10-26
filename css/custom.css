@@ -1,0 +1,59 @@
+:root {
+    --black: #000000;
+    --high-contrast: #222222;
+    --white: #ffffff;
+    --off-white: #F9F7F4;
+    --primary: #EC00C5;
+    --primary-gradient: linear-gradient(90deg, #EC00C5 0%, #8706E3 100%);
+    --body-font: "proxima-nova", sans-serif;
+}
+a, button {
+    transition: all 0.33s;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-size: 18px;
+    font-family: var(--body-font);
+    font-weight: 400;
+    line-height: 1.33;
+    background-color: var(--black);
+    color: var(--off-white);
+}
+h1 {
+    font-size: 84px;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+h2, h3 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+}
+h3 {
+    font-size: 48px;
+}
+h4 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.17;
+}
+h5 {
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1;
+}
+.primary-gradient, h5 {
+    background: var(--primary);
+    background: var(--primary-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.large {
+    font-size: 21px;
+    line-height: 1.42;
+}
