@@ -14,17 +14,17 @@
 <body>
     <header class="main-header">
         <div class="container">
-            <div class="topbar-content">
+            <div class="topbar-content text-end d-none d-lg-block">
                 <a href="#" class="login-btn"><i class="fa-light fa-right-to-bracket"></i>Customer Log In</a>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-auto">
                     <div class="mobile-header">
                         <a href="./index.html" class="site-logo">
                             <img src="./img/site-logo.svg" alt="site_logo">
                         </a>
-                        <button class="hamburger-btn d-lg-none" data-bs-toggle="collapse" data-bs-target="#mainmenu">
-                            <span>rr</span>
+                        <button class="hamburger-btn d-lg-none" data-bs-toggle="collapse" data-bs-target="#mainmenu" onclick="document.body.classList.toggle('active-menu')">
+                            <span></span>
                             <span></span>
                             <span></span>
                         </button>
@@ -40,10 +40,10 @@
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
-                            <div class="navbar-topbar">
+                            <div class="navbar-topbar d-lg-none">
                                 <a href="#" class="login-btn"><i class="fa-light fa-right-to-bracket"></i>Customer Log In</a>
                             </div>
-                            <div class="navbar-buttons-group">
+                            <div class="buttons-group justify-content-center column-gap-2 d-lg-none d-xl-flex">
                                 <a href="#" class="primary-transparent">Distributor Sign Up</a>
                                 <a href="#" class="primary-solid">Clinic Application</a>
                             </div>

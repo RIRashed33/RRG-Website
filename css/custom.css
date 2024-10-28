@@ -8,7 +8,9 @@
     --body-font: "proxima-nova", sans-serif;
 }
 a, button {
+    display: inline-block;
     transition: all 0.33s;
+    text-decoration: none;
 }
 img {
     max-width: 100%;
@@ -56,4 +58,63 @@ h5 {
 .large {
     font-size: 21px;
     line-height: 1.42;
+}
+.container {
+    max-width: 1448px;
+    padding: 0 24px;
+}
+.login-btn {
+    font-size: 14px;
+    color: var(--off-white);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.primary-transparent, .primary-solid {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--primary);
+    padding: 10px 20px;
+    border: 1px solid var(--primary);
+    border-radius: 40px;
+}
+.primary-transparent:hover, .primary-solid {
+    color: var(--white);
+    background-color: var(--primary);
+}
+.primary-solid:hover, .primary-transparent {
+    background-color: transparent;
+}
+.buttons-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+/* Header Style */
+.main-header {
+    padding: 24px 0;
+    background-color: var(--black);
+}
+nav.navbar {
+    justify-content: flex-end;
+    gap: 32px;
+    width: 100%;
+}
+nav.navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+nav.navbar > ul > li > a {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--off-white);
+    padding: 2px;
+}
+nav.navbar > ul > li > a:hover, .login-btn:hover {
+    color: var(--primary);
 }
