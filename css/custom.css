@@ -50,6 +50,7 @@ h5 {
     line-height: 1;
 }
 .primary-gradient, h5 {
+    display: inline-block;
     background: var(--primary);
     background: var(--primary-gradient);
     background-clip: text;
@@ -97,24 +98,61 @@ h5 {
     background-color: var(--black);
 }
 nav.navbar {
-    justify-content: flex-end;
     gap: 32px;
     width: 100%;
 }
-nav.navbar > ul {
+:is(nav.navbar, nav.footer-navbar, .footer-menu) ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     gap: 24px;
-}
-nav.navbar > ul > li > a {
     font-size: 16px;
     font-weight: 600;
+}
+nav.navbar ul li a {
     color: var(--off-white);
     padding: 2px;
 }
-nav.navbar > ul > li > a:hover, .login-btn:hover {
+:is(nav.navbar, nav.footer-navbar, .footer-menu) ul li a:hover, .login-btn:hover {
     color: var(--primary);
+}
+
+/* Footer Style */
+.main-footer {
+    padding: 120px 0 250px;
+    background-color: var(--black);
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-position: bottom center;
+}
+nav.footer-navbar ul {
+    align-items: flex-start;
+    max-width: 450px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+nav.footer-navbar ul li {
+    flex: 1 1 calc(50% - 4px);
+}
+nav.footer-navbar ul li a {
+    color: var(--off-white);
+    padding: 4px 0;
+}
+.footer-buttons-group.buttons-group {
+    row-gap: 32px;
+}
+.footer-menu ul {
+    flex-wrap: wrap;
+    gap: 16px !important;
+    font-size: 13px !important;
+}
+.footer-menu ul li a {
+    color: var(--off-white);
+}
+.footer-text-box {
+    padding: 56px;
+    border: 3px solid #333333;
+    border-radius: 50px;
 }
