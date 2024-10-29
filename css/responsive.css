@@ -69,16 +69,37 @@
 
 }
 @media screen and (max-width: 767px){
-    .hero-img img {
+    h2 {
+        font-size: 36px;
+        line-height: 1.17;
+    }
+    :is(.hero-img, .full-width-banner) img {
         border-radius: 20px;
+    }
+    .hero-section {
+        padding: 24px 0 48px;
+    }
+    .hero-img img {
+        width: 100%;
+    }
+    .full-width-banner h2 {
+        margin-bottom: 32px;
+    }
+    .full-width-banner {
+        padding: 48px 0;
     }
 
 
 }
 @media screen and (max-width: 575px){
     .buttons-group {
-        gap: 8px;
+        flex-direction: column;
+        align-items: stretch;
     }
+    .footer-buttons-group {
+        column-gap: 8px;
+    }
+    
 
 
 }

@@ -121,7 +121,7 @@ h5 {
 .buttons-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 20px;
 }
 /* Header Style */
 .main-header {
@@ -171,7 +171,8 @@ nav.footer-navbar ul li a {
     color: var(--off-white);
     padding: 4px 0;
 }
-.footer-buttons-group.buttons-group {
+.footer-buttons-group{
+    column-gap: 20px;
     row-gap: 32px;
 }
 .footer-menu ul {
@@ -189,12 +190,21 @@ nav.footer-navbar ul li a {
 }
 
 /* Section Style */
+:is(.hero-img, .full-width-banner) img {
+    border-radius: 50px;
+}
 .hero-section {
     padding: 90px 0;
 }
-.hero-img img {
-    border-radius: 50px;
-}
 .hero-content p {
     margin-bottom: 32px;
+}
+.full-width-banner {
+    padding: 80px 0;
+}
+.full-width-banner h2 {
+    margin-bottom: 80px;
+}
+.full-width-banner img {
+    width: 100%;
 }
