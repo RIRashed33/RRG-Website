@@ -1,3 +1,12 @@
+@media screen and (max-width: 1199px){
+    h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+    }
+
+
+
+}
 @media screen and (max-width: 991px){
     .container {
         padding: 0 12px;
@@ -59,9 +68,24 @@
 
 
 }
+@media screen and (max-width: 767px){
+    .hero-img img {
+        border-radius: 20px;
+    }
 
+
+}
 @media screen and (max-width: 575px){
     .buttons-group {
         gap: 8px;
     }
+
+
+}
+@media screen and (min-width: 1200px) {
+    .large {
+        font-size: 21px;
+        line-height: 1.42;
+    }
+
 }

@@ -56,10 +56,6 @@ h5 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.large {
-    font-size: 21px;
-    line-height: 1.42;
-}
 .container {
     max-width: 1448px;
     padding: 0 24px;
@@ -71,21 +67,56 @@ h5 {
     align-items: center;
     gap: 8px;
 }
-.primary-transparent, .primary-solid {
+.primary-transparent, .primary-solid, .primary-transparent-small, .primary-solid-small {
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
+    text-align: center;
     color: var(--primary);
-    padding: 10px 20px;
+    padding: 10px 24px;
     border: 1px solid var(--primary);
     border-radius: 40px;
 }
-.primary-transparent:hover, .primary-solid {
+.primary-transparent, .primary-solid {
+    min-width: 190px;
+}
+.primary-transparent-small, .primary-solid-small {
+    padding: 10px 19px;
+}
+:is(.primary-transparent, .primary-transparent-small):hover, .primary-solid, .primary-solid-small {
     color: var(--white);
     background-color: var(--primary);
 }
-.primary-solid:hover, .primary-transparent {
+:is(.primary-solid, .primary-solid-small):hover, .primary-transparent, .primary-transparent-small {
     background-color: transparent;
+}
+:is(.primary-solid-arrow, .primary-gradient-arrow) {
+    padding: 11px 29px;
+    background-color: var(--primary);
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.primary-gradient-arrow {
+    background: var(--primary-gradient);
+}
+:is(.primary-solid-arrow, .primary-gradient-arrow) > i {
+    position: relative;
+    top: 1px;
+    line-height: 0.75;
+    font-size: 20px;
+    transition: all 0.33s;
+}
+:is(.primary-solid-arrow, .primary-gradient-arrow):hover > i {
+    transform: rotate(45deg);
+    top: 0;
 }
 .buttons-group {
     display: flex;
@@ -155,4 +186,15 @@ nav.footer-navbar ul li a {
     padding: 56px;
     border: 3px solid #333333;
     border-radius: 50px;
+}
+
+/* Section Style */
+.hero-section {
+    padding: 90px 0;
+}
+.hero-img img {
+    border-radius: 50px;
+}
+.hero-content p {
+    margin-bottom: 32px;
 }
