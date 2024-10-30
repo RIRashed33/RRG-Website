@@ -73,6 +73,12 @@
         padding: 32px;
         border-radius: 20px;
     }
+    .distributors-inquiry-form {
+        padding: 48px;
+    }
+    .inquiry-fields-row {
+        column-gap: 32px;
+    }
 
 
 }
@@ -109,7 +115,7 @@
     .full-width-banner {
         padding: 48px 0;
     }
-    .three-box-section, .experience-section, .two-teaser-box, .multiple-card-section {
+    .three-box-section, .experience-section, .two-teaser-box, .multiple-card-section, .distributor-inquiry {
         padding: 64px 0;
     }
     .single-box {
@@ -143,6 +149,14 @@
     .single-card-content {
         padding: 32px;
         border-radius: 20px;
+    }
+    .distributors-inquiry-form {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
+    .inquiry-fields-row > * {
+        flex: 1 1 100%;
     }
 
 
