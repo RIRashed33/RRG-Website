@@ -81,6 +81,10 @@ h6 {
     font-size: 21px;
     line-height: 1.42;
 }
+.small {
+    font-size: 16px;
+    line-height: 1.5;
+}
 P:last-child {
     margin-bottom: 0;
 }
@@ -423,7 +427,7 @@ nav.footer-navbar ul li a {
     row-gap: 32px;
 }
 .inquiry-fields-row > * {
-    flex: 1 1 calc(50% - 28px);
+    flex: 1;
 }
 .form-fields-group {
     display: flex;
@@ -446,4 +450,54 @@ nav.footer-navbar ul li a {
 .teaser-box-section h2 {
     margin-bottom: 64px;
     max-width: 1200px;
+}
+.full-width-section {
+    padding: 80px 0 140px;
+}
+.full-width-content h2 {
+    margin-bottom: 36px;
+}
+.full-width-content img {
+    width: 100%;
+    border-radius: 5px;
+}
+.contact-section {
+    padding: 80px 0;
+}
+.contact-content {
+    max-width: 620px;
+}
+.contact-content > p {
+    margin-bottom: 32px;
+}
+.contact-information {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 48px;
+    margin-bottom: 48px;
+}
+.contact-information > * {
+    flex: 1;
+}
+.single-info-column {
+    display: flex;
+    gap: 20px;
+}
+.contact-info-icon i {
+    font-size: 28px;
+}
+.contact-form {
+    padding: 48px 64px;
+    border: 2px solid #333333;
+    border-radius: 50px;
+}
+.contact-form h3 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+.contact-form input {
+    border: none;
+    padding: 13px 26px;
 }
