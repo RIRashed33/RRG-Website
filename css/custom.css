@@ -332,6 +332,7 @@ nav.footer-navbar ul li a {
     border-radius: 50px;
 }
 .single-teaser-box {
+    min-height: 100%;
     background-color: var(--black);
     padding: 56px 86px;
     border-radius: 50px;
@@ -367,7 +368,7 @@ nav.footer-navbar ul li a {
     background-color: var(--white);
     color: #333333;
 }
-.multiple-card-section, .distributor-inquiry {
+.multiple-card-section, .distributor-inquiry, .teaser-box-section {
     padding: 110px 0;
 }
 .multiple-card-section h2 {
@@ -435,4 +436,14 @@ nav.footer-navbar ul li a {
     text-transform: inherit;
     color: #111111;
     margin-bottom: 20px;
+}
+.banner-top p:not(.banner-top p:last-child) {
+    margin-bottom: 32px;
+}
+.teaser-box-section {
+    background-color: var(--white);
+}
+.teaser-box-section h2 {
+    margin-bottom: 64px;
+    max-width: 1200px;
 }

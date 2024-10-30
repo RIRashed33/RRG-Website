@@ -115,7 +115,7 @@
     .full-width-banner {
         padding: 48px 0;
     }
-    .three-box-section, .experience-section, .two-teaser-box, .multiple-card-section, .distributor-inquiry {
+    .three-box-section, .experience-section, .two-teaser-box, .multiple-card-section, .distributor-inquiry, .teaser-box-section {
         padding: 64px 0;
     }
     .single-box {
@@ -157,6 +157,9 @@
     }
     .inquiry-fields-row > * {
         flex: 1 1 100%;
+    }
+    .teaser-box-section h2 {
+        margin-bottom: 40px;
     }
 
 
