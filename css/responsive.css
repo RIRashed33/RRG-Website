@@ -3,6 +3,10 @@
         font-size: 48px;
         margin-bottom: 16px;
     }
+    .large {
+        font-size: 18px;
+        line-height: 1.33;
+    }
 
 
 
@@ -69,9 +73,19 @@
 
 }
 @media screen and (max-width: 767px){
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
     h2 {
         font-size: 36px;
         line-height: 1.17;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 30px;
     }
     h5 {
         margin-bottom: 20px;
@@ -91,6 +105,34 @@
     .full-width-banner {
         padding: 48px 0;
     }
+    .three-box-section, .experience-section {
+        padding: 64px 0;
+    }
+    .single-box {
+        border-radius: 40px;
+    }
+    .three-box-top, .three-box-content {
+        margin-bottom: 48px;
+    }
+    .three-box-bottom h2 {
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+    .single-box-content {
+        padding: 24px 32px 32px;
+    }
+    .experience-banner img {
+        border-radius: 25px;
+    }
+    .experience-content h4 {
+        margin-bottom: 48px;
+    }
+    .experience-row {
+        row-gap: 48px;
+    }
+    .experience-column h2 {
+        font-size: 60px;
+    }
 
 
 }
@@ -107,9 +149,5 @@
 
 }
 @media screen and (min-width: 1200px) {
-    .large {
-        font-size: 21px;
-        line-height: 1.42;
-    }
 
 }
