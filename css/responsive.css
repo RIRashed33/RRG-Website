@@ -69,6 +69,10 @@
     nav.navbar > ul {
         flex-direction: column;
     }
+    .single-teaser-box {
+        padding: 32px;
+        border-radius: 20px;
+    }
 
 
 }
@@ -105,7 +109,7 @@
     .full-width-banner {
         padding: 48px 0;
     }
-    .three-box-section, .experience-section {
+    .three-box-section, .experience-section, .two-teaser-box, .multiple-card-section {
         padding: 64px 0;
     }
     .single-box {
@@ -132,6 +136,13 @@
     }
     .experience-column h2 {
         font-size: 60px;
+    }
+    .banner-top {
+        margin-bottom: 28px;
+    }
+    .single-card-content {
+        padding: 32px;
+        border-radius: 20px;
     }
 
 

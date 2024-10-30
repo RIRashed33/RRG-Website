@@ -58,6 +58,13 @@ h5 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+h6 {
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
 .large {
     font-size: 21px;
     line-height: 1.42;
@@ -297,4 +304,63 @@ nav.footer-navbar ul li a {
 .experience-banner img {
     width: 100%;
     border-radius: 50px;
+}
+.single-teaser-box {
+    background-color: var(--black);
+    padding: 56px 86px;
+    border-radius: 50px;
+    transition: all 0.33s;
+}
+.single-teaser-box h4 {
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.single-teaser-box p {
+    color: var(--white);
+}
+.single-teaser-box:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+.two-teaser-box {
+    padding: 80px 0 120px;
+}
+.two-teaser-box .single-teaser-box {
+    border: 2px solid #333333;
+}
+.two-teaser-box .single-teaser-box:hover {
+    border-color: var(--primary);
+}
+.banner-top {
+    margin-bottom: 72px;
+}
+.banner-top h3 {
+    max-width: 550px;
+}
+.white-bg {
+    background-color: var(--white);
+    color: #333333;
+}
+.multiple-card-section {
+    padding: 110px 0;
+}
+.multiple-card-section h2 {
+    max-width: 1060px;
+    line-height: 1.2;
+    margin-bottom: 64px;
+}
+.single-card-content {
+    min-height: 100%;
+    padding: 60px 80px;
+    background-color: var(--black);
+    border: 2px solid #333333;
+    border-radius: 50px;
+    transition: all 0.33s;
+}
+.single-card-content h4 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.single-card-content:hover {
+    color: var(--primary);
 }
