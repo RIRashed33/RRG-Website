@@ -73,6 +73,9 @@
         font-size: 36px;
         line-height: 1.17;
     }
+    h5 {
+        margin-bottom: 20px;
+    }
     :is(.hero-img, .full-width-banner) img {
         border-radius: 20px;
     }
