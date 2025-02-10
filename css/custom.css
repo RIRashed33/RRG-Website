@@ -1,24 +1,29 @@
 :root {
-    --black: #000000;
-    --high-contrast: #222222;
+    --text: #333333;
     --white: #ffffff;
-    --off-white: #F9F7F4;
-    --primary: #EC00C5;
-    --primary-gradient: linear-gradient(90deg, #EC00C5 0%, #8706E3 100%);
-    --body-font: "proxima-nova", sans-serif;
+    --gray: #999999;
+    --primary: #4E00A6;
+    --secondary: #B40C98;
+    --tertiary: #FE5836;
+    --primary-gradient: linear-gradient(90deg, #FE6723 0%, #EC00C5 48.5%, #8706E3 100%);
+    --secondary-gradient: linear-gradient(86deg, #EC00C5 -3.62%, #8706E3 81.62%);
+    --border: 1px solid #CCCCCC;
+    --body-font: "Lato", serif;
+    --heading-font: "Raleway", serif;
 }
 a, button {
     display: inline-block;
     -webkit-transition: all 0.33s;
     transition: all 0.33s;
+    color: var(--primary);
     text-decoration: none;
 }
-input {
+input, textarea {
     line-height: 24px;
     background-color: var(--white);
     padding: 12px 24px;
     outline: none;
-    border: 1px solid #ccc;
+    border: var(--border);
     border-radius: 8px;
     -webkit-transition: all 0.33s;
     transition: all 0.33s;
@@ -31,12 +36,12 @@ img {
     height: auto;
 }
 body {
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--body-font);
     font-weight: 400;
-    line-height: 1.33;
-    background-color: var(--black);
-    color: var(--off-white);
+    line-height: 1.5;
+    background-color: var(--white);
+    color: var(--text);
     position: relative;
 }
 h1 {
@@ -95,20 +100,21 @@ P:last-child {
     max-width: 1448px;
     padding: 0 24px;
 }
-.login-btn {
+.link-with-icon {
     font-size: 14px;
-    color: var(--off-white);
+    color: var(--primary);
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 8px;
+    font-weight: 800;
 }
 .primary-transparent, .primary-solid, .primary-transparent-small, .primary-solid-small {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 800;
     line-height: 18px;
     text-align: center;
     color: var(--primary);
@@ -126,8 +132,12 @@ P:last-child {
     color: var(--white);
     background-color: var(--primary);
 }
-:is(.primary-solid, .primary-solid-small):hover, .primary-transparent, .primary-transparent-small {
+.primary-transparent, .primary-transparent-small {
     background-color: transparent;
+}
+:is(.primary-solid, .primary-solid-small):hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 :is(.primary-solid-arrow, .primary-gradient-arrow) {
     padding: 11px 29px;
@@ -192,9 +202,14 @@ span.horizontal {
     border-top: 1px solid var(--primary);
 }
 /* Header Style */
+.topbar-section {
+    padding: 8px 0;
+    background: linear-gradient(90deg, #FE5836 -0.19%, #B40C98 49.9%, #4E00A6 99.99%);
+    color: var(--white);
+    font-size: 13px;
+}
 .main-header {
-    padding: 24px 0;
-    background-color: var(--black);
+    padding: 16px 0;
 }
 nav.navbar {
     gap: 32px;
@@ -211,20 +226,20 @@ nav.navbar {
         -ms-flex-align: center;
             align-items: center;
     gap: 24px;
-    font-size: 16px;
-    font-weight: 600;
 }
 nav.navbar ul li a {
-    color: var(--off-white);
+    color: var(--text);
     padding: 2px;
+    font-size: 15px;
+    font-weight: 800;
 }
-:is(nav.navbar, nav.footer-navbar, .footer-menu) ul li a:hover, .login-btn:hover, nav.navbar ul li.current-menu-item > a {
-    color: var(--primary);
+:is(nav.navbar, nav.footer-navbar, .footer-menu) ul li a:hover, .link-with-icon:hover, nav.navbar ul li.current-menu-item > a {
+    color: var(--secondary);
 }
 /* Footer Style */
 .main-footer {
     padding: 120px 0 250px;
-    background-color: var(--black);
+    background-color: var(--text);
     background-image: url(../img/footer-bg.png);
     background-size: cover;
     background-position: bottom center;
@@ -245,7 +260,7 @@ nav.footer-navbar ul li {
             flex: 1 1 calc(50% - 4px);
 }
 nav.footer-navbar ul li a {
-    color: var(--off-white);
+    color: var(--white);
     padding: 4px 0;
 }
 .footer-buttons-group{
@@ -261,7 +276,7 @@ nav.footer-navbar ul li a {
     font-size: 13px !important;
 }
 .footer-menu ul li a {
-    color: var(--off-white);
+    color: var(--white);
 }
 .footer-text-box {
     padding: 56px;
@@ -289,7 +304,7 @@ nav.footer-navbar ul li a {
 }
 .three-box-section {
     background-color: var(--white);
-    color: var(--high-contrast);
+    color: var(--text);
     padding: 120px 0;
 }
 .three-box-top {
@@ -302,7 +317,7 @@ nav.footer-navbar ul li a {
     margin-bottom: 150px;
 }
 .single-box {
-    background-color: var(--black);
+    background-color: var(--text);
     color: var(--white);
     overflow: hidden;
     border-radius: 50px;
@@ -372,10 +387,10 @@ nav.footer-navbar ul li a {
 }
 .single-teaser-box {
     min-height: 100%;
-    background-color: var(--black);
+    background-color: var(--text);
     padding: 56px 86px;
     border-radius: 50px;
-    color: var(--off-white);
+    color: var(--white);
     -webkit-transition: all 0.33s;
     transition: all 0.33s;
 }
@@ -420,7 +435,7 @@ nav.footer-navbar ul li a {
 .single-card-content {
     min-height: 100%;
     padding: 60px 80px;
-    background-color: var(--black);
+    background-color: var(--text);
     border: 2px solid #333333;
     border-radius: 50px;
     -webkit-transition: all 0.33s;
@@ -429,7 +444,7 @@ nav.footer-navbar ul li a {
 .single-card-content h4 {
     font-weight: 400;
     margin-bottom: 0;
-    color: var(--off-white);
+    color: var(--white);
     -webkit-transition: all 0.33s;
     transition: all 0.33s;
 }
@@ -438,7 +453,7 @@ nav.footer-navbar ul li a {
 }
 .distributor-inquiry {
     background-color: var(--white);
-    color: var(--high-contrast);
+    color: var(--text);
 }
 .distributor-heading {
     text-align: center;
@@ -555,7 +570,7 @@ nav.footer-navbar ul li a {
     font-size: 28px;
 }
 .contact-info a{
-    color: var(--off-white);
+    color: var(--white);
 }
 .contact-form {
     padding: 48px 64px;
