@@ -44,25 +44,26 @@ body {
     color: var(--text);
     position: relative;
 }
-h1 {
-    font-size: 84px;
-    line-height: 1;
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
     font-weight: 300;
-    margin-bottom: 24px;
 }
-h2, h3 {
+h1 {
     font-size: 60px;
-    font-weight: 700;
-    line-height: 1;
+    line-height: 1.07;
+    margin-bottom: 16px;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.17;
     margin-bottom: 0;
 }
 h3 {
-    font-size: 48px;
-}
-h4 {
     font-size: 36px;
     font-weight: 600;
-    line-height: 1.17;
+    line-height: 1.25;
+    margin-bottom: 0;
 }
 h5 {
     font-size: 21px;
@@ -70,6 +71,10 @@ h5 {
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 32px;
+    background: var(--secondary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .primary-gradient, h5 {
     display: inline-block;
@@ -208,6 +213,9 @@ span.horizontal {
     color: var(--white);
     font-size: 13px;
 }
+.site-logo .white {
+    display: none;
+}
 .main-header {
     padding: 16px 0;
 }
@@ -238,10 +246,10 @@ nav.navbar ul li a {
 }
 /* Footer Style */
 .main-footer {
-    padding: 120px 0 250px;
-    background-color: var(--text);
-    background-image: url(../img/footer-bg.png);
-    background-size: cover;
+    padding: 120px 0 28%;
+    background-image: url(../img/footer-bg.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-position: bottom center;
 }
 nav.footer-navbar ul {
@@ -260,7 +268,7 @@ nav.footer-navbar ul li {
             flex: 1 1 calc(50% - 4px);
 }
 nav.footer-navbar ul li a {
-    color: var(--white);
+    color: var(--text);
     padding: 4px 0;
 }
 .footer-buttons-group{
@@ -276,11 +284,11 @@ nav.footer-navbar ul li a {
     font-size: 13px !important;
 }
 .footer-menu ul li a {
-    color: var(--white);
+    color: var(--text);
 }
 .footer-text-box {
     padding: 56px;
-    border: 3px solid #333333;
+    border: 3px solid var(--primary);
     border-radius: 50px;
 }
 /* Section Style */

@@ -11,24 +11,44 @@
 @media screen and (max-width: 991px){
     .container {
         padding: 0 12px;
-   }
+    }
     .main-header {
         padding: 16px 0;
-   }
+    }
     .site-logo {
         max-width: 120px;
-   }
+    }
+    body.active-menu .site-logo .primary {
+        display: none;
+    }
+    body.active-menu .site-logo .white {
+        display: block;
+    }
+   .topbar-section {
+        display: none;
+    }
+    #mainmenu {
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: var(--secondary);
+        background: linear-gradient(32deg, #FE5836 0%, #B40C98 49.68%, #4E00A6 99.36%);
+    }
     .mobile-header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-   }
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+    }
     .hamburger-btn {
         width: 40px;
         display: -webkit-box;
@@ -60,40 +80,64 @@
         transition: all 0.33s;
     }
     body.active-menu .hamburger-btn span {
-        background-color: var(--primary);
+        background-color: var(--white);
         top: -8px;
-   }
+    }
     body.active-menu .hamburger-btn span:first-child {
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
         top: 13px;
-   }
+    }
     body.active-menu .hamburger-btn span:last-child {
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
         top: -12px;
-   }
+    }
     body.active-menu .hamburger-btn span:nth-child(2) {
         width: 0;
         top: 2px;
-   }
+    }
     nav.navbar {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        padding: 24px 0 48px;
-   }
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 86px 12px 48px;
+        gap: 24px;
+    }
     nav.navbar > ul {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-   }
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 16px;
+    }
+    nav.navbar ul li a {
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 600;
+    }
+    nav.navbar .link-with-icon {
+        color: var(--white);
+        font-weight: 400;
+    }
+    nav.navbar :is(.primary-transparent-small, .primary-solid-small) {
+        border-color: var(--white);
+        color: var(--white);
+        font-weight: 600;
+        background-color: transparent;
+    }
+    nav.navbar .primary-solid-small {
+        background: var(--white);
+        color: var(--primary);
+    }
+    nav.navbar ul li a:hover, .link-with-icon:hover {
+        color: var(--primary);
+    }
     .single-teaser-box {
         padding: 32px;
         border-radius: 20px;
-   }
+    }
     .distributors-inquiry-form {
         padding: 48px;
    }
