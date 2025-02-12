@@ -65,18 +65,30 @@ h3 {
     line-height: 1.25;
     margin-bottom: 0;
 }
-h5 {
+h4 {
     font-size: 21px;
-    font-weight: 800;
-    line-height: 1;
+    line-height: 1.33;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.33;
     text-transform: uppercase;
     margin-bottom: 32px;
-    background: var(--secondary-gradient);
+    background: linear-gradient(90deg, #EC00C5 0%, #7206D7 17.48%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.primary-gradient, h5 {
+h6 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+.primary-gradient {
     display: inline-block;
     background: var(--primary);
     background: var(--primary-gradient);
@@ -92,7 +104,7 @@ h5 {
 h6 {
     font-size: 18px;
     line-height: 1.33;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     margin-bottom: 16px;
 }
@@ -429,32 +441,41 @@ nav.footer-navbar ul li a {
 }
 .single-teaser-box {
     min-height: 100%;
-    background-color: var(--text);
+    background: linear-gradient(44deg, #FE5836 0%, #B40C98 50%, #4E00A6 100%);
     padding: 56px 86px;
     border-radius: 50px;
     color: var(--white);
     -webkit-transition: all 0.33s;
     transition: all 0.33s;
 }
-.single-teaser-box h4 {
-    font-weight: 400;
-    margin-bottom: 16px;
+.single-teaser-box h3 {
+    font-weight: 300;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+.single-teaser-box h3 span {
+    font-size: 26px;
+    display: inline-block;
+    line-height: 0.75;
+    margin-left: auto;
 }
 .single-teaser-box p {
-    color: var(--white);
+    margin-bottom: 36px;
 }
-.single-teaser-box:hover {
-    background-color: var(--primary);
-    color: var(--white);
+.single-teaser-box a.primary-solid-arrow {
+    color: var(--primary);
+    background-color: var(--white);
+}
+.bg-vector-1 {
+    background: url(../img/section-bg-vector-1.png) center top / cover;
+}
+.single-teaser-box.solid-bg {
+    background: var(--primary);
 }
 .two-teaser-box {
-    padding: 80px 0 120px;
-}
-.two-teaser-box .single-teaser-box {
-    border: 2px solid #333333;
-}
-.two-teaser-box .single-teaser-box:hover {
-    border-color: var(--primary);
+    padding: 160px 0 0;
 }
 .banner-top {
     margin-bottom: 72px;
