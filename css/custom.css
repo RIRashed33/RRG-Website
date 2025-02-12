@@ -83,6 +83,12 @@ h5 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.secondary-gradient {
+    background: var(--secondary);
+    background: var(--secondary-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 h6 {
     font-size: 18px;
     line-height: 1.33;
@@ -91,8 +97,8 @@ h6 {
     margin-bottom: 16px;
 }
 .large {
-    font-size: 21px;
-    line-height: 1.42;
+    font-size: 18px;
+    line-height: 1.33;
 }
 .small {
     font-size: 16px;
@@ -300,15 +306,39 @@ nav.footer-navbar ul li a {
 }
 .hero-content p {
     margin-bottom: 32px;
+    max-width: 600px;
 }
 .full-width-banner {
     padding: 90px 0 140px;
 }
 .full-width-banner h2 {
-    margin-bottom: 93px;
+    max-width: 1050px;
+    margin-bottom: 54px;
 }
 .full-width-banner img {
     width: 100%;
+}
+.full-width-image-with-overlay {
+    position: relative;
+}
+.full-width-image-with-overlay::before, .full-width-image-with-overlay::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    border-radius: 50px;
+}
+.full-width-image-with-overlay::before {
+    background: url(../img/banner-overlay-vector.png);
+    background-position: top 160px center;
+    background-size: 100%;
+}
+.full-width-image-with-overlay::after {
+    background: var(--primary-gradient);
 }
 .three-box-section {
     background-color: var(--white);
@@ -316,16 +346,15 @@ nav.footer-navbar ul li a {
     padding: 120px 0;
 }
 .three-box-top {
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
-.three-box-top h3 {
-    max-width: 560px;
+.three-box-top h2 {
+    max-width: 600px;
 }
 .three-box-content {
     margin-bottom: 150px;
 }
 .single-box {
-    background-color: var(--text);
     color: var(--white);
     overflow: hidden;
     border-radius: 50px;
@@ -335,20 +364,20 @@ nav.footer-navbar ul li a {
 }
 .single-box-content {
     padding: 32px 48px 40px;
+    background: linear-gradient(260deg, #4E00A6 6.5%, #B40C98 55%, #FE5836 100%);
 }
-.single-box-content h4 {
+.single-box-content h3 {
     line-height: 1;
     margin-bottom: 16px;
+}
+.single-box-content a {
+    line-height: 1;
+    color: var(--white);
+    font-size: 26px;
 }
 .single-box-content span {
     font-size: 14px;
     font-weight: 700;
-    color: var(--primary);
-}
-.single-box-content a {
-    line-height: 1;
-    color: var(--primary);
-    font-size: 26px;
 }
 .three-box-bottom h2 {
     font-size: 72px;
@@ -356,10 +385,14 @@ nav.footer-navbar ul li a {
     font-weight: 300;
     margin-bottom: 48px;
 }
+.three-box-bottom h3 {
+    font-family: var(--body-font);
+}
 .experience-section {
     padding: 120px 0 100px;
 }
-.experience-content h4 {
+.experience-content h3 {
+    max-width: 600px;
     margin-bottom: 80px;
 }
 .experience-row {
@@ -382,6 +415,7 @@ nav.footer-navbar ul li a {
     font-size: 72px;
     font-weight: 300;
     margin-bottom: 24px;
+    font-family: var(--body-font);
 }
 .experience-column span.horizontal {
     max-width: 160px;

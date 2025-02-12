@@ -1,14 +1,7 @@
-@media screen and (max-width: 1199px){
-    h1 {
-        font-size: 48px;
-        margin-bottom: 16px;
-   }
-    .large {
-        font-size: 18px;
-        line-height: 1.33;
-   }
-}
 @media screen and (max-width: 991px){
+    h1 {
+        font-size: 42px;
+    }
     .container {
         padding: 0 12px;
     }
@@ -156,21 +149,17 @@
     body {
         font-size: 16px;
         line-height: 1.5;
-   }
+    }
     h2 {
         font-size: 36px;
-        line-height: 1.17;
-   }
+    }
     h3 {
         font-size: 30px;
-   }
-    h4 {
-        font-size: 30px;
-   }
+    }
     h5 {
         margin-bottom: 20px;
-   }
-    :is(.hero-img, .full-width-banner) img {
+    }
+    :is(.hero-img, .full-width-banner) img, .full-width-image-with-overlay::before, .full-width-image-with-overlay::after {
         border-radius: 20px;
    }
     .hero-section {
@@ -188,9 +177,9 @@
     .three-box-section, .experience-section, .two-teaser-box, .multiple-card-section, .distributor-inquiry, .teaser-box-section {
         padding: 64px 0;
    }
-    .single-box {
-        border-radius: 40px;
-   }
+   .single-box {
+        border-radius: 24px;
+    }
     .three-box-top, .three-box-content {
         margin-bottom: 48px;
    }
