@@ -264,7 +264,7 @@ nav.navbar ul li a {
 }
 /* Footer Style */
 .main-footer {
-    padding: 120px 0 28%;
+    padding: 80px 0 28%;
     background-image: url(../img/footer-bg.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -348,6 +348,10 @@ nav.footer-navbar ul li a {
     background: url(../img/banner-overlay-vector.png);
     background-position: top 160px center;
     background-size: 100%;
+}
+.full-width-image-with-overlay.overlay-2::before {
+    background: url(../img/banner-overlay-vector-2.png);
+    background-position: top 70px center;
 }
 .full-width-image-with-overlay::after {
     background: var(--primary-gradient);
@@ -469,7 +473,10 @@ nav.footer-navbar ul li a {
     background-color: var(--white);
 }
 .bg-vector-1 {
-    background: url(../img/section-bg-vector-1.png) center top / cover;
+    background: url(../img/section-bg-vector-1.png) no-repeat center top / 100%;
+}
+.bg-vector-2 {
+    background: url(../img/section-bg-vector-2.png) no-repeat bottom center / 100%;
 }
 .single-teaser-box.solid-bg {
     background: var(--primary);
@@ -478,41 +485,34 @@ nav.footer-navbar ul li a {
     padding: 160px 0 0;
 }
 .banner-top {
-    margin-bottom: 72px;
+    margin-bottom: 48px;
 }
-.banner-top h3 {
+.banner-top h2 {
+    color: var(--primary);
     max-width: 550px;
 }
-.white-bg {
-    background-color: var(--white);
-    color: #333333;
-}
-.multiple-card-section, .distributor-inquiry, .teaser-box-section {
+.distributor-inquiry, .teaser-box-section {
     padding: 110px 0;
+}
+.multiple-card-section {
+    padding: 80px 0 200px;
 }
 .multiple-card-section h2 {
     max-width: 1060px;
-    line-height: 1.2;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 }
 .single-card-content {
     min-height: 100%;
     padding: 60px 80px;
-    background-color: var(--text);
-    border: 2px solid #333333;
+    background-color: var(--primary);
+    color: var(--white);
     border-radius: 50px;
     -webkit-transition: all 0.33s;
     transition: all 0.33s;
+    font-size: 26px;
 }
-.single-card-content h4 {
-    font-weight: 400;
-    margin-bottom: 0;
-    color: var(--white);
-    -webkit-transition: all 0.33s;
-    transition: all 0.33s;
-}
-.single-card-content:hover h4 {
-    color: var(--primary);
+.single-card-content:hover {
+    background: var(--primary-gradient);
 }
 .distributor-inquiry {
     background-color: var(--white);
